@@ -13,6 +13,34 @@
   </head>
   <body>
     <div>
+      <h2>Hidden Fields</h2>
+      <p><code>input:hidden</code> is used for hidden fields.</p>
+    </div>
+    <div>
+      <h2>Grouping Related Fields</h2>
+      <div>
+        <h3>Using Section and Heading</h3>
+        <section>
+          <h4>Billing Address</h4>
+          <input type="text" /><input type="text" /><input type="text" />
+        </section>
+      </div>
+      <div>
+        <h3>Using Fieldset and legend</h3>
+        <fieldset>
+          <legend>Delivery Address</legend>
+          <input type="text" /><input type="text" /><input type="text" />
+        </fieldset>
+      </div>
+    </div>
+
+    <div>
+      <h2>File Inputs</h2>
+      <div>
+        <input type="file" multiple accept=".png" />
+      </div>
+    </div>
+    <div>
       <h2>
         Sliders
         <div><input type="range" min="0" max="100" value="25" step="10" /></div>
