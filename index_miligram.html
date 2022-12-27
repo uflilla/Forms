@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miligram Framework</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <link rel="stylesheet" href="style_miligram.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Radio Buttons</h2>
+      <div>
+        <input type="radio" name="membership" id="silver" />
+        <label for="silver" class="label-inline">Silver</label>
+      </div>
+      <div>
+        <input type="radio" name="membership" id="gold" checked />
+        <label for="gold" class="label-inline">Gold</label>
+      </div>
+    </div>
+    <div>
+      <h2>Check Boxes</h2>
+      <div>
+        <input type="checkbox" id="front-end" checked />
+        <label class="label-inline" for="front-end">Front-end</label>
+      </div>
+      <div>
+        <input type="checkbox" id="back-end" disabled />
+        <label class="label-inline" for="back-end">Back-end</label>
+      </div>
+    </div>
+    <div>
+      <h2>DropDown List</h2>
+      <h3>Single list</h3>
+      <div>
+        <select name="" id="">
+          <option value="">Select Course</option>
+          <option value="1" selected>HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">JavaScript</option>
+        </select>
+      </div>
+      <h3>Multiple Group List</h3>
+      <div>
+        <select name="" id="">
+          <optgroup label="Front-end Courses">
+            <option value="1">HTML</option>
+            <option value="2" selected>CSS</option>
+            <option value="3">JavaScript</option>
+          </optgroup>
+          <optgroup label="Back-end Courses">
+            <option value="1">Node.js</option>
+            <option value="2">ASP.NET</option>
+            <option value="3">Django</option>
+          </optgroup>
+        </select>
+      </div>
+    </div>
+    <h2>Text Field</h2>
+    <form action="">
+      <div>
+        <label for="name">Text Field</label>
+        <input id="name" type="text" placeholder="Name" />
+      </div>
+      <div>
+        <label for="num">Number Field</label>
+        <input id="num" type="number" value="5" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" required />
+      </div>
+      <div>
+        <label for="date">Date</label>
+        <input id="date" type="date" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" value="uflilla@gmail.com" readonly />
+      </div>
+      <div>
+        <label for="txtarea">Text Area</label>
+        <textarea name="txtarea" id="textarea" cols="30" rows="2">
+Description...</textarea
+        >
+      </div>
+      <div>
+        <label for="datalist">Data List</label>
+        <input type="text" list="countries" />
+        <datalist id="countries">
+          <option data-value="1">Australia</option>
+          <option data-value="2">Pakistan</option>
+          <option data-value="3">India</option>
+          <option data-value="4">USA</option>
+        </datalist>
+      </div>
+    </form>
+  </body>
+</html>
